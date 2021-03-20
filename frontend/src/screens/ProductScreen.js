@@ -18,7 +18,7 @@ const ProductScreen = ({match,history}) => {
     },[match,dispatch])
 
     const addToCartHandler=()=>{
-      history.push(`/cart/${match.params.id}?qty=${qty}`)
+      history.push(`/product/${match.params.id}`)
     }
     const productDetails=useSelector(state => state.productDetails)
     const {loading,error,product}=productDetails
